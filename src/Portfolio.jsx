@@ -184,6 +184,12 @@ export default function Portfolio() {
               <Cert>ServiceNow Certified System Administrator (CSA)</Cert>
               <Cert>Salesforce AI Associate</Cert>
               <Cert>Cambridge Linguaskill Communication Certification</Cert>
+              <Cert>AWS Certified Data Engineer – Associate certification</Cert>
+              <Cert href="https://drive.google.com/file/d/1hPj5_EKqbr2NCXRzd0Wzd5osr3ZoQplp/view?usp=drive_link">AWS Certified Data Engineer – Associate certification</Cert>
+              <Cert href="https://your-aws-certificate-link.com">AWS Cloud Practitioner (CP)</Cert>
+              <Cert href="https://your-servicenow-link.com">ServiceNow Certified System Administrator (CSA)</Cert>
+              <Cert href="https://drive.google.com/file/d/1hCQvQ_fyFAe_b5w7_wHR3qIkVnanqmVD/view?usp=sharing">Salesforce AI Associate</Cert>
+              <Cert href="https://drive.google.com/file/d/1KGiD8IsGS5MmCLNXbj7FIEot3pXQcFzf/view?usp=sharing">Cambridge Linguaskill Communication Certification</Cert>
             </div>
           </Reveal>
         </section>

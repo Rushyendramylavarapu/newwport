@@ -66,13 +66,34 @@ export function SpecRow({ label, value, ok = false }) {
   );
 }
 
-export function Cert({ children }) {
+export function Cert({ children, href }) {
   return (
     <div
-      className="flex items-center gap-3 px-5 py-4 text-[15px] border rounded-2xl"
+      className="flex items-center justify-between px-5 py-4 text-[15px] border rounded-2xl"
       style={{ color: "#e2e8f0", borderColor: LINE }}
     >
-      <span style={{ color: ACCENT }}>✓</span> {children}
+      <div className="flex items-center gap-3">
+        <span style={{ color: ACCENT }}>✓</span> {children}
+      </div>
+      {href && (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs font-mono px-3 py-1.5 rounded-full border transition-colors duration-200"
+          style={{ borderColor: ACCENT, color: ACCENT }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = ACCENT;
+            e.currentTarget.style.color = "#0B0A12";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = "transparent";
+            e.currentTarget.style.color = ACCENT;
+          }}
+        >
+          View
+        </a>
+      )}
     </div>
   );
 }
