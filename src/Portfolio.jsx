@@ -12,6 +12,37 @@ import { ProjectCard, ProjectModal } from "./components/ProjectCard";
 import { ExpItem, SkillGroup } from "./components/sections";
 import { Btn, Cert, NavLink, SectionHeading, SpecRow } from "./components/ui";
 
+function TypingName({ name }) {
+  const [displayed, setDisplayed] = useState("");
+  const [showCursor, setShowCursor] = useState(true);
+
+  useEffect(() => {
+    let i = 0;
+    setDisplayed("");
+    const interval = setInterval(() => {
+      i++;
+      setDisplayed(name.slice(0, i));
+      if (i >= name.length) {
+        clearInterval(interval);
+        setTimeout(() => setShowCursor(false), 1000);
+      }
+    }, 80);
+    return () => clearInterval(interval);
+  }, [name]);
+
+  return (
+    <>
+      {displayed}
+      {showCursor && (
+        <span
+          className="inline-block w-[3px] h-[0.85em] align-middle ml-1 animate-pulse"
+          style={{ backgroundColor: ACCENT }}
+        />
+      )}
+    </>
+  );
+}
+
 export default function Portfolio() {
   const [introDone, setIntroDone] = useState(false);
   const [openProject, setOpenProject] = useState(null);
@@ -75,7 +106,7 @@ export default function Portfolio() {
               B.Tech CSE · KL University
             </p>
             <h1 className="font-display font-extrabold text-[38px] sm:text-[58px] leading-[1.05] tracking-tight mb-6">
-              Rushyendra Baba Mylavarapu
+              <TypingName name="Rushyendra Baba Mylavarapu" />
             </h1>
             <p className="text-lg max-w-xl leading-relaxed mb-10" style={{ color: "#cbd5e1" }}>
               Computer science student building across web, cloud, and data —
@@ -180,16 +211,11 @@ export default function Portfolio() {
           <Reveal><SectionHeading index="05" title="Certifications" /></Reveal>
           <Reveal>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <Cert>AWS Cloud Practitioner (CP)</Cert>
-              <Cert>ServiceNow Certified System Administrator (CSA)</Cert>
-              <Cert>Salesforce AI Associate</Cert>
-              <Cert>Cambridge Linguaskill Communication Certification</Cert>
-              <Cert>AWS Certified Data Engineer – Associate certification</Cert>
-              <Cert href="https://drive.google.com/file/d/1hPj5_EKqbr2NCXRzd0Wzd5osr3ZoQplp/view?usp=drive_link">AWS Certified Data Engineer – Associate certification</Cert>
               <Cert href="https://your-aws-certificate-link.com">AWS Cloud Practitioner (CP)</Cert>
               <Cert href="https://your-servicenow-link.com">ServiceNow Certified System Administrator (CSA)</Cert>
               <Cert href="https://drive.google.com/file/d/1hCQvQ_fyFAe_b5w7_wHR3qIkVnanqmVD/view?usp=sharing">Salesforce AI Associate</Cert>
               <Cert href="https://drive.google.com/file/d/1KGiD8IsGS5MmCLNXbj7FIEot3pXQcFzf/view?usp=sharing">Cambridge Linguaskill Communication Certification</Cert>
+              <Cert href="https://drive.google.com/file/d/1hPj5_EKqbr2NCXRzd0Wzd5osr3ZoQplp/view?usp=drive_link">AWS Certified Data Engineer – Associate</Cert>
             </div>
           </Reveal>
         </section>
@@ -238,7 +264,7 @@ export default function Portfolio() {
                   onMouseEnter={(e) => (e.currentTarget.style.color = ACCENT)}
                   onMouseLeave={(e) => (e.currentTarget.style.color = "#e2e8f0")}
                 >
-                  LinkedIn ↗
+                  LinkedIn
                 </a>
               </div>
             </div>
