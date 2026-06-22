@@ -87,7 +87,7 @@ export default function Portfolio() {
           style={{ backgroundColor: "rgba(10,11,13,0.7)", borderColor: LINE }}
         >
           <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-            <span className="font-display font-semibold tracking-tight">RBM</span>
+            <span className="font-display font-semibold tracking-tight">Rushyendra</span>
             <div className="hidden md:flex gap-8">
               <NavLink href="#about">About</NavLink>
               <NavLink href="#experience">Experience</NavLink>
@@ -211,8 +211,10 @@ export default function Portfolio() {
           <Reveal><SectionHeading index="05" title="Certifications" /></Reveal>
           <Reveal>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <Cert href="https://your-aws-certificate-link.com">AWS Cloud Practitioner (CP)</Cert>
+              <Cert href="https://drive.google.com/file/d/1QfEnXVoSMygkrsHnPkOdydfcTAVG6xix/view?usp=drive_link">AWS Cloud Practitioner (CP)</Cert>
               <Cert href="https://your-servicenow-link.com">ServiceNow Certified System Administrator (CSA)</Cert>
+              <Cert href="https://drive.google.com/file/d/1eoqayTcc3ZtYiT6LfuU1cwQBalPKECMD/view?usp=sharing">ServiceNow Certified Implementation Specialist – Data Foundations
+(CMDB and CSDM) (CIS-DF (CMDB and CSDM))</Cert>
               <Cert href="https://drive.google.com/file/d/1hCQvQ_fyFAe_b5w7_wHR3qIkVnanqmVD/view?usp=sharing">Salesforce AI Associate</Cert>
               <Cert href="https://drive.google.com/file/d/1KGiD8IsGS5MmCLNXbj7FIEot3pXQcFzf/view?usp=sharing">Cambridge Linguaskill Communication Certification</Cert>
               <Cert href="https://drive.google.com/file/d/1hPj5_EKqbr2NCXRzd0Wzd5osr3ZoQplp/view?usp=drive_link">AWS Certified Data Engineer – Associate</Cert>
