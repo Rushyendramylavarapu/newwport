@@ -270,6 +270,18 @@ export default function Portfolio() {
                 >
                   LinkedIn
                 </a>
+                <a
+                  href="https://www.instagram.com/rushyendra_26/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-cursor-hover
+                  className="transition-colors"
+                  style={{ color: "#e2e8f0" }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = ACCENT)}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "#e2e8f0")}
+                >
+                  Instagram
+                </a>
               </div>
             </div>
             <div className="text-xs mt-16" style={{ color: "#928FB0" }}>
