@@ -212,12 +212,14 @@ export default function Portfolio() {
           <Reveal>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <Cert href="https://drive.google.com/file/d/1QfEnXVoSMygkrsHnPkOdydfcTAVG6xix/view?usp=drive_link">AWS Cloud Practitioner (CP)</Cert>
-              <Cert href="https://your-servicenow-link.com">ServiceNow Certified System Administrator (CSA)</Cert>
+              <Cert href="https://drive.google.com/file/d/1hPj5_EKqbr2NCXRzd0Wzd5osr3ZoQplp/view?usp=drive_link">AWS Certified Data Engineer – Associate</Cert>
+              <Cert href="https://drive.google.com/file/d/13XgDFFEkx3W_lcEAx9X5tKEFykes0PIM/view?usp=sharing">ServiceNow Certified System Administrator (CSA)</Cert>
+              <Cert href="https://drive.google.com/file/d/147hGCVgteAS63KLHd_B1y41ridiscY8F/view?usp=sharing">ServiceNow Certified Application Developer (CAD)</Cert>
               <Cert href="https://drive.google.com/file/d/1eoqayTcc3ZtYiT6LfuU1cwQBalPKECMD/view?usp=sharing">ServiceNow Certified Implementation Specialist – Data Foundations
-(CMDB and CSDM) (CIS-DF (CMDB and CSDM))</Cert>
+(CMDB and CSDM)</Cert>
+              <Cert href="https://drive.google.com/file/d/1_iij7x0hgr5uIDhWbdh6KA-3mZ7V4yI-/view?usp=sharing">Microsoft Certified: Azure Fundamentals (AZ-900)</Cert>
               <Cert href="https://drive.google.com/file/d/1hCQvQ_fyFAe_b5w7_wHR3qIkVnanqmVD/view?usp=sharing">Salesforce AI Associate</Cert>
               <Cert href="https://drive.google.com/file/d/1KGiD8IsGS5MmCLNXbj7FIEot3pXQcFzf/view?usp=sharing">Cambridge Linguaskill Communication Certification</Cert>
-              <Cert href="https://drive.google.com/file/d/1hPj5_EKqbr2NCXRzd0Wzd5osr3ZoQplp/view?usp=drive_link">AWS Certified Data Engineer – Associate</Cert>
             </div>
           </Reveal>
         </section>
@@ -271,7 +273,7 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="text-xs mt-16" style={{ color: "#928FB0" }}>
-              Vijayawada, Andhra Pradesh, India — built with React + Tailwind CSS.
+              Vijayawada, Andhra Pradesh, India
             </div>
           </Reveal>
         </footer>
